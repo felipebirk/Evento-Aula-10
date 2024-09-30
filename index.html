@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet">
+
+    <title>Inscreva-se para o Evento</title>
+</head>
+<body>
+    
+    <div class="container">
+    <h2>Inscreva-se para o Evento</h2>
+
+    <fieldset>
+        <legend>&nbsp;&nbsp;&nbsp;Informações Pessoais</legend>
+        <div class="form-group"> 
+            <label for="name">&nbsp; Nome Completo</label> 
+            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">&nbsp; E-mail</label> 
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">&nbsp; Telefone</label> 
+            <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>&nbsp;&nbsp;&nbsp;Escolha suas preferências</legend>
+
+        <label for="opcoes">&nbsp;&nbsp;&nbsp;Tipo de Evento</label> 
+            <select id="opcoes" name="opcoes">
+            <option value="opcao1">Selecione</option>
+            <option value="opcao2">Grátis</option>
+            <option value="opcao3">Pago</option>
+        </select>
+
+        <form>
+           <br> <legend>&nbsp;&nbsp;&nbsp;Preferências Alimentares</legend>
+
+           <div class="checkbox-group"> <br>
+            <label for="opcao4">
+                Vegetariano <input type="checkbox" id="opcao4" name="opcoes" value="opcao4">
+            </label>
+            <br>
+
+            <label for="opcao5">
+                Vegano <input type="checkbox" id="opcao5" name="opcoes" value="opcao5">
+            </label>
+            <br>
+
+            <label for="opcao6">
+                Sem Glúten <input type="checkbox" id="opcao6" name="opcoes" value="opcao6">
+            <br>
+            <br>
+            <label for="opcao7">
+                Carnívoro <input type="checkbox" id="opcao7" name="opcoes" value="opcao7">
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>&nbsp;&nbsp;&nbsp;Comentários e Preferências Adicionais</legend>
+        <form>
+            &nbsp;<label for="comentarios">Comentários</label>
+            <textarea id="comentarios" name="comentarios" rows="2" cols="50" placeholder="Deixe seus comentários ou preferências aqui"></textarea>
+          </form>
+    </fieldset>
+    <div class="botaoenviar"></div>
+    <button class="btn-enviar">Enviar Inscrição</button>
+</div>
+</body>
+</html>

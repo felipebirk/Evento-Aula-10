@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box; /* Ajusta o box model para incluir padding e borda na largura total */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #5cdbd5, #3871a0); /* Fundo em gradiente */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Preenche a altura total da tela */
+    color: #535858;
+}
+
+.container {
+    background-color: #ffffff; /* Cor de fundo do "papel" */
+    width: 90%; /* Largura responsiva */
+    max-width: 600px; /* Largura máxima */
+    padding: 20px;
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para o "papel" */
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #000000;
+}
+
+fieldset {
+    border: 1px solid #e0e0e0; /* Borda do fieldset */
+    border-radius: 10px; /* Borda arredondada para o fieldset */
+    padding: 10px; /* Espaçamento interno do fieldset */
+    margin-bottom: 20px; /* Espaçamento abaixo do fieldset */
+}
+
+legend {
+    font-weight: bold; /* Deixa o texto do legend em negrito */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os grupos de formulário */
+}
+
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 5px; /* Espaçamento abaixo do label */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%; /* Largura total dos campos */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; /* Espaçamento à direita do checkbox */
+}
+
+textarea {
+    resize: none; /* Remove a possibilidade de redimensionar o textarea */
+}
+
+.btn-enviar {
+    background-color: #28a745; /* Cor verde do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Mostra que é clicável */
+    font-size: 16px; /* Tamanho do texto */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    display: block; /* Garante que o botão ocupe a largura total */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+/* Efeito ao passar o mouse */
+.btn-enviar:hover {
+    background-color: #218838; /* Cor verde mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+/* Efeito ao clicar no botão */
+.btn-enviar:active {
+    background-color: #1e7e34; /* Cor ainda mais escura quando clicado */
+    transform: scale(1); /* Volta ao tamanho original */
+}
+
+.checkbox-group {
+   padding-left: 15px; 
+}
